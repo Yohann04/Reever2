@@ -8,209 +8,32 @@
     font-family: 'Poppins',sans-serif;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(bg2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 50px;
-}
-
-.container {
-    position: relative;
-    width: calc(100% - 100px);
-    min-height: calc(100vh -280px);
-    min-height: 300px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-}
-
-header {
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    left: 20px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255,255,255,0.2);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-header .logo {
-    color: #8a2435;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-}
-
-header ul {
-    display: flex;
-}
-
-header ul li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-header ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #8a2435;
-    padding: 8px 15px;
-    border-radius: 25px;
-}
-
-header ul li a:hover,
-header ul li a.active {
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-
-.content h2 {
-    font-size: 3em;
-    color: #8a2435;
-}
-
-.content p {
-    font-size: 1.2em;
-    color: #8a2435;
-
-}
-
-.content a {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #fff;
-    color: #8a2435;
-    margin-top: 20px;
-    border-radius: 30px;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-decoration: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.imgBx img {
-    max-width: 400px;
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-    0%,100%
-    {
-        transform: translateY(50px);
-    }
-    50%
-    {
-        transform: translateY(100px);
-    }
-}
-
-
-  
-  .container2 {
-    position: relative;
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 
-  form {
-    background: rgba(255, 255, 255, .3);
-    padding: 3rem;
-    height: 50%;
-    border-radius: 20px;
-    border-left: 1px solid rgba(255, 255, 255, .3);
-    border-top: 1px solid rgba(255, 255, 255, .3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
-    text-align: center;
+  .content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-size: 3vh;
+    display: block;
   }
 
-  p {
-    color: white;
-    font-weight: 500;
-    opacity: .7;
-    font-size: 1.4rem;
-    margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-  }
-    
-  a {
-    text-decoration: none;
-    color: #ddd;
-    font-size: 12px;
-  }
-  
-  a:hover {
-    text-shadow: 2px 2px 6px #00000040;
-  }
-  
-  a:active {
-    text-shadow: none;
+  .content1 {
+    position: fixed;
+    color: #f1f1f1;
+    padding: 150px;
+    font-size: 3vh;
   }
 
-  input {
-    background: transparent;
-    border: none;
-    border-left: 1px solid rgba(255, 255, 255, .3);
-    border-top: 1px solid rgba(255, 255, 255, .3);
-    padding: 1rem;
-    width: 200px;
-    border-radius: 50px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    -moz-backdrop-filter: blur(5px);
-    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
-    color: white;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    transition: all .3s;
-    margin-bottom: 2em;
-  }
-
-  input:hover,
-input[type="email"]:focus,
-input[type="password"]:focus{
-  background: rgba(255,255,255,0.1);
-  box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-}
-    
-input[type="button"] {
-  margin-top: 10px;
-  width: 150px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-::placeholder {
-  color: #fff;
-}
-
-.drop {
-    background: rgba(255, 255, 255, .3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-left: 1px solid rgba(255, 255, 255, .3);
-    border-top: 1px solid rgba(255, 255, 255, .3);
-    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
-    position: absolute;
-    transition: all 0.2s ease;
+  strong {
+    color: bisque;
+    font-size: 20vh;
   }
